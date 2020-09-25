@@ -1,0 +1,129 @@
+/*  NotoSans  */
+@font-face {
+  font-family:'NotoSanskr_Thin';
+  src : url('font/NotoSanskr_Thin.eot'),
+  url('font/NotoSanskr_Thin.woff') format('woff'),
+  url('font/NotoSanskr_Thin.woff2') format('woff2'),
+  url('font/NotoSanskr_Thin.ttf') format('truetype');
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'NotoSanskr_Light';
+  src : url('font/NotoSanskr_Light.eot'),
+  url('font/NotoSanskr_Light.woff') format('woff'),
+  url('font/NotoSanskr_Light.woff2') format('woff2'),
+  url('font/NotoSanskr_Light.ttf') format('truetype');
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'NotoSanskr_Demilight';
+  src : url('font/NotoSanskr_Demilight.eot'),
+  url('font/NotoSanskr_Demilight.woff') format('woff'),
+  url('font/NotoSanskr_Demilight.woff2') format('woff2'),
+  url('font/NotoSanskr_Demilight.ttf') format('truetype');
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'NotoSanskr_Regular';
+  src : url('font/NotoSanskr_Regular.eot'),
+  url('font/NotoSanskr_Regular.woff') format('woff'),
+  url('font/NotoSanskr_Regular.woff2') format('woff2'),
+  url('font/NotoSanskr_Regular.ttf') format('truetype');
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'NotoSanskr_Medium';
+  src : url('font/NotoSanskr_Medium.eot'),
+  url('font/NotoSanskr_Medium.woff') format('woff'),
+  url('font/NotoSanskr_Medium.woff2') format('woff2'),
+  url('font/NotoSanskr_Medium.ttf') format('truetype');
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'NotoSanskr_Bold';
+  src : url('font/NotoSanskr_Bold.eot'),
+  url('font/NotoSanskr_Bold.woff') format('woff'),
+  url('font/NotoSanskr_Bold.woff2') format('woff2'),
+  url('font/NotoSanskr_Bold.ttf') format('truetype');
+  font-style:normal;
+}
+
+/*  NanumSquare */
+@font-face {
+  font-family: 'NanumSquareL';
+  src:url('font/NanumSquareL.eot?#iefix') format('embedded-opentype'),
+  url('font/NanumSquareL.woff') format('woff'),
+  url('font/NanumSquareL.ttf') format('truetype');
+  font-style:normal;
+}
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('font/NanumSquareR.eot?#iefix') format('embedded-opentype'),
+  url('font/NanumSquareR.woff') format('woff'),
+  url('font/NanumSquareR.ttf') format('truetype');
+  font-style:normal;
+}
+@font-face {
+  font-family: 'NanumSquareB';
+  src: url('font/NanumSquareB.eot?#iefix') format('embedded-opentype'),
+  url('font/NanumSquareB.woff') format('woff'),
+  url('font/NanumSquareB.ttf') format('truetype');
+  font-style:normal;
+}
+@font-face {
+  font-family: 'NanumSquareEB';
+  src: url('font/NanumSquareEB.eot?#iefix') format('embedded-opentype'),
+  url('font/NanumSquareEB.woff') format('woff'),
+  url('font/NanumSquareEB.ttf') format('truetype');
+  font-style:normal;
+}
+
+/*  Montserrat  */
+@font-face {
+  font-family: 'Montserrat_Regular';
+  font-style: normal;
+  src: url('font/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('font/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('font/montserrat-v12-latin-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Montserrat_Medium';
+  font-style: normal;
+  src: url('font/montserrat-v12-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/montserrat-v12-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+  url('font/montserrat-v12-latin-500.woff') format('woff'), /* Modern Browsers */
+  url('font/montserrat-v12-latin-500.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Montserrat_SemiBold';
+  font-style: normal;
+  src: url('font/montserrat-v12-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/montserrat-v12-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+  url('font/montserrat-v12-latin-600.woff') format('woff'), /* Modern Browsers */
+  url('font/montserrat-v12-latin-600.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'Montserrat_Bold';
+  font-style: normal;
+  src: url('font/montserrat-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/montserrat-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('font/montserrat-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('font/montserrat-v12-latin-700.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+/*  LinearIcons-Free  */
+@font-face {
+  font-family: 'Linearicons-Free';
+  src:url('font/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+  url('font/Linearicons-Free.woff2?w118d') format('woff2'),
+  url('font/Linearicons-Free.woff?w118d') format('woff'),
+  url('font/Linearicons-Free.ttf?w118d') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

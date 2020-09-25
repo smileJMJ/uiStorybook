@@ -3,8 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   stories: [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)",
+    /*"../stories/!**!/!*.stories.mdx",
+    "../stories/!**!/!*.stories.@(js|jsx|ts|tsx)",*/
     "../component/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   addons: [
@@ -35,8 +35,34 @@ module.exports = {
         },
         { loader: "sass-loader", options: { sourceMap: true }},
       ],
-      include: path.resolve(__dirname, '../component'),
+      include: path.resolve(__dirname, '../'),
       exclude: /node_modules/
+    });
+
+    config.module.rules.push({
+      test: /\.(ico|png|jpe?g|gif|svg)$/,
+      loader: 'url-loader',
+      options: {
+        limit: 5000,
+        fallback: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].[ext]',
+            outputPath: './resource/img',
+            publicPath: '/resource/img'
+          }
+        }
+      }
+    });
+
+    config.module.rules.push({
+      test: /\.(woff|woff2|ttf|eot)$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]',
+        outputPath: './resource/css/font',
+        publicPath: '/resource/css/font'
+      }
     });
 
     // Return the altered config
