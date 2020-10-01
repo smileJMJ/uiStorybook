@@ -1,7 +1,6 @@
 import React, {useCallback} from 'react';
 import {observer} from "mobx-react";
-import PaginationVM from './PaginationViewModel';
-import {IPaginiationProps, PaginationType, EPaginationBtnType} from './type';
+import {IPaginiationProps, EPaginationBtnType} from './type';
 
 import css from './Pagination.scss';
 
@@ -27,7 +26,7 @@ const PButton = (props: IPButtonProps) => {
 };
 
 const Pagination = observer((props: IPaginiationProps) => {
-    const {paginationVM, paginationType = PaginationType.BASIC, className} = props;
+    const {paginationVM, className} = props;
     const {curIdx, startIdx, endIdx, option} = paginationVM;
     const {pageUtil} = option;
     const lastPage = option.pageUtil.lastPage;
@@ -59,15 +58,6 @@ const Pagination = observer((props: IPaginiationProps) => {
         ));
         return buttons;
     };
-
-    if(paginationType === PaginationType.SIMPLE)
-        return (
-            <div className={`${css.pagination} ${css.simplePagination} ${className || ''}`}>
-                <span>{`${curIdx}/${option.pageUtil.lastPage}`}</span>
-                <PButton className={`${css.prev}`} type={EPaginationBtnType.prev} onClick={clickBtnPage} title="이전" disabled={curIdx === 1 ? true : false} hidden={true}>이전 페이지</PButton>
-                <PButton className={`${css.next}`} onClick={clickBtnPage} type={EPaginationBtnType.next} title="다음" disabled={curIdx === lastPage ? true : false} hidden={true}>다음 페이지</PButton>
-            </div>
-        );
 
     return (
         <div className={`${css.pagination} ${className || ''}`}>
