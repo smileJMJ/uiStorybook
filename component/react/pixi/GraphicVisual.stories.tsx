@@ -1,25 +1,11 @@
 import React, {useEffect, useRef} from 'react';
-import {visual} from './GraphicVisual';
-
-export const GrapicVisual = args => {
-    const ref = useRef(null);
-
-    useEffect(() => {
-        visual.init(ref.current);
-    }, []);
-
-    return (
-        <>
-            <div ref={ref}></div>
-        </>
-    )
-};
+import GraphicVisual from './GraphicVisual';
 
 export default {
-    component: GrapicVisual,
+    component: GraphicVisual,
     title: 'React/Pixi'
 }
 
-const Template = args => <GrapicVisual/>;
+const Template = args => <GraphicVisual {...args}/>;
 
-const Default = Template.bind({});
+export const Default = Template.bind({});
