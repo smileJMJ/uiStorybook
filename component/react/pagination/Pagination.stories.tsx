@@ -6,7 +6,7 @@ import { IPaginiationProps } from './type';
 
 export default {
     component: Pagination,
-    title: 'React/Pagination'
+    title: 'React/Pagination/Pagination'
 }
 
 const Template = (args: IPaginiationProps) => <Pagination {...args}/>;

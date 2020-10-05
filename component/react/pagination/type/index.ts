@@ -8,9 +8,6 @@ export interface IPageUtil {
     blockSize: number;
 }
 
-export enum EPaginationBtnType {prev = 'prev', next = 'next', first = 'first', last = 'last', number = 'number', all = 'all'};
-
 export interface IPaginiationProps {
     paginationVM: PaginationVM;
-    className?: string;
 }

@@ -1,0 +1,58 @@
+.paginationButton {
+  width: 34px;
+  height: 30px;
+  font-family: 'NotoSanskr_Regular';
+  font-size: 14px;
+  color: #a6a8af;
+  line-height: 30px;
+  vertical-align: top;
+  border-radius: 3px;
+  transition: background-color .15s ease-out;
+
+  &:not(.on):hover {
+    background-color: #e3e7ea;
+    color: #000;
+  }
+
+  &:disabled {
+    color: #eee;
+    cursor: not-allowed;
+    background-color: transparent;
+  }
+  &::before {
+    display: inline-block;
+    font-family: 'Linearicons-Free';
+    vertical-align: middle;
+  }
+
+  &.prev {
+    &::before {content: '\e875';}
+  }
+
+  &.next {
+    margin-left: 5px;
+    &::before {content: '\e876';}
+  }
+
+  &.first {
+    &::before {content: '\e879';}
+  }
+
+  &.last {
+    &::before {content: '\e87a';}
+  }
+
+  &.on {
+    color: #000;
+    border: 1px solid #dae1e6;
+    background-color: #fff;
+  }
+
+  > .hidden {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+}
