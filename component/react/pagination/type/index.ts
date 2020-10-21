@@ -10,4 +10,5 @@ export interface IPageUtil {
 
 export interface IPaginiationProps {
     paginationVM: PaginationVM;
+    defaultPageUtil?: IPageUtil;
 }

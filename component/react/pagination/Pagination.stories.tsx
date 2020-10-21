@@ -13,7 +13,7 @@ const Template = (args: IPaginiationProps) => <Pagination {...args}/>;
 
 export const Default = Template.bind({});
 const defaultVM = new PaginationViewModel();
-defaultVM.setOption({
+/*defaultVM.setOption({
     pageUtil: {
         currentPage: 1,
         pageSize: 20,
@@ -21,8 +21,15 @@ defaultVM.setOption({
         recordCount: 1,
         blockSize: 5,
     }
-});
+});*/
 Default.args = {
-    paginationVM: defaultVM
+    paginationVM: defaultVM,
+    defaultPageUtil: {
+        currentPage: 1,
+        pageSize: 20,
+        lastPage: 20,
+        recordCount: 1,
+        blockSize: 5,
+    }
 };
 

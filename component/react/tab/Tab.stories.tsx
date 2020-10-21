@@ -12,8 +12,8 @@ const Template = (args: ITabContents) => <Tab {...args}/>;
 export const Default = Template.bind({});
 Default.args = {
     tabContents: [
-        {name: 'Tab 1', className: null},
-        {name: 'Tab 2', className: null},
-        {name: 'Tab 3', className: null}
+        {name: 'Tab 1'},
+        {name: 'Tab 2'},
+        {name: 'Tab 3'}
     ]
 };

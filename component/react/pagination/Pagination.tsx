@@ -7,10 +7,11 @@ import {EPaginationBtnType} from "../paginationButton/type";
 import css from './Pagination.scss';
 
 const Pagination = observer((props: IPaginiationProps) => {
-    const {paginationVM} = props;
+    const {paginationVM, defaultPageUtil} = props; // storybook에서 옵션값 바꿔볼 수 있도록 pageUtil 바깥으로 빼줌. 단, 실제는 viewModel setOption 통해서 값 변경해야 함
     const {curIdx, startIdx, endIdx, option} = paginationVM;
-    const {pageUtil} = option;
-    const {blockSize, lastPage} = pageUtil;
+    let {pageUtil} = option;
+    pageUtil = defaultPageUtil ? defaultPageUtil : pageUtil; // 실제 사용 시에는 해당 코드 지우기 - defaultPageUtil은 Storybook에서 옵션값 바꿔주기 위한 props임
+    let {blockSize, lastPage} = pageUtil;
 
     // 숫자 페이지 버튼 클릭 이벤트 콜백
     const clickBtnPage = useCallback((e) => {

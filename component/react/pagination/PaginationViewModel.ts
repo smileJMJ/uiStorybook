@@ -1,5 +1,6 @@
 import {action, computed, observable} from "mobx";
-import {EPaginationBtnType, IPageUtil} from "./type";
+import {IPageUtil} from "./type";
+import {EPaginationBtnType} from "../paginationButton/type";
 
 interface IOption {
     pageUtil: IPageUtil; // 페이징 정보

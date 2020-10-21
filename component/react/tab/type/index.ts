@@ -1,7 +1,6 @@
 export interface ITabContents {
     name: string;
-    className: string | null;
-    //onClick: (e: MouseEvent) => {}
+    onClick: (e: MouseEvent) => void
 }
 
 export interface ITabProps {

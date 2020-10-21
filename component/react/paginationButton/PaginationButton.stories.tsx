@@ -29,3 +29,13 @@ Prev.args = {
     hidden: true,
     className: css.paginationButton
 };
+
+export const Next = Template.bind({});
+Next.args = {
+    onClick: action('next clicked'),
+    type: EPaginationBtnType.next,
+    title: '다음 페이지',
+    children: '다음 페이지',
+    hidden: true,
+    className: css.paginationButton
+};
